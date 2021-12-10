@@ -1,4 +1,25 @@
-import Head from 'next/head'
+// import * from '../public/assets/vendor/purecounter/purecounter';
+// import * from '../public/assets/vendor/bootstrap/js/bootstrap.bundle.min';
+// import * from '../public/assets/vendor/glightbox/js/glightbox.min.js';
+// import * from '../public/assets/vendor/isotope-layout/isotope.pkgd.min';
+// import * from '../public/assets/vendor/swiper/swiper-bundle.min';
+// import * from '../public/assets/vendor/waypoints/noframework.waypoints';
+// import * from '../public/assets/vendor/php-email-form/validate';
+
+// <!-- Template Main JS File -->
+// import * from '../public/assets/js/main';
+
+// components
+import Head from 'next/head';
+import About from '../src/components/About/About';
+import Header from '../src/components/Header/Header';
+import Portfolio from '../src/components/Portfolio/portfolio';
+import Resume from '../src/components/Resume/Resume';
+import Service from '../src/components/Service/Service';
+import Contact from '../src/components/Contact/Contact';
+
+
+
 
 export default function Home() {
   return (
@@ -6,39 +27,25 @@ export default function Home() {
       <Head>
         <title>Reza Rostami Nikoo</title>
         <link rel="icon" href="/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
       </Head>
+      <Header></Header>
+      <About></About>
+      <Resume></Resume>
+      <Service></Service>
+      <Portfolio></Portfolio>
 
-      <header id="header">
-        <div class="container">
+      <Contact></Contact>
+      <script src="assets/vendor/purecounter/purecounter.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
 
-          <h1><a href="index.html">Emily Jones</a></h1>
-          {/* <!-- Uncomment below if you prefer to use an image logo --> */}
-          {/* <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> --> */}
-          <h2>I'm a passionate <span>graphic designer</span> from New York</h2>
-
-          <nav id="navbar" class="navbar">
-            <ul>
-              <li><a class="nav-link active" href="#header">Home</a></li>
-              <li><a class="nav-link" href="#about">About</a></li>
-              <li><a class="nav-link" href="#resume">Resume</a></li>
-              <li><a class="nav-link" href="#services">Services</a></li>
-              <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-              <li><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav>
-          {/* <!-- .navbar --> */}
-
-          <div class="social-links">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
-
-        </div>
-      </header>
-
+      {/* <!-- Template Main JS File --> */}
+      <script src="assets/js/main.js"></script>
     </div>
   )
 }
